@@ -1,3 +1,5 @@
+import { IoFilter } from "react-icons/io5";
+
 const LinkList = () => {
   return (
 
@@ -54,6 +56,10 @@ const LinkList = () => {
             </a>
           </li>
         </ul>
+        <button className="btn d-flex justify-content-between gap-2 p-2 border border-light bg-light ">
+          <IoFilter/>
+          <h6 className="fs-6">Filters</h6>
+        </button>
       </div>
  
   )
