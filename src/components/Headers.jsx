@@ -1,9 +1,9 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const Headers = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top w-100">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary  ">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             BIOSCOPE

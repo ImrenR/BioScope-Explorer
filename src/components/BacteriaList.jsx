@@ -1,7 +1,7 @@
 const BacteriaList = () => {
   return (
-    <div className="container mt-5 d-flex justify-content-center">
-  <div className="input-group w-100">
+    <div className="container d-flex justify-content-center mt-5">
+  <div className="input-group">
     <input
       type="text"
       className="form-control"

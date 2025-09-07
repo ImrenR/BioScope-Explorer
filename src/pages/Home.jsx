@@ -8,11 +8,12 @@ const Home = () => {
 
 
 
-  
+
   return (
   <div>
+    <Headers/>
 <BacteriaList/>
-<Headers/>
+
   </div>
   )
 }
