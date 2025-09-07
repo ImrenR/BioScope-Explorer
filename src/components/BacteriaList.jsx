@@ -1,16 +1,14 @@
-import Filter from "./Filter"
+import Filter from "./Search";
+import LinkList from "./LinkList";
 
 const BacteriaList = () => {
   return (
-  <div>
-  <Filter/>
-<div>
-  <img src="" alt="" />
-  
-</div>
-  
+    <div>
+      <div>
+        <img src="" alt="" />
+      </div>
     </div>
-)
-}
+  );
+};
 
-export default BacteriaList
+export default BacteriaList;

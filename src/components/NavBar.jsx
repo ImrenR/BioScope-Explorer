@@ -1,6 +1,4 @@
-
-
-const Headers = () => {
+const NavBar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary  ">
@@ -55,4 +53,4 @@ const Headers = () => {
   );
 };
 
-export default Headers;
+export default NavBar;
