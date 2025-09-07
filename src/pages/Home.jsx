@@ -10,11 +10,11 @@ const Home = () => {
 
 
   return (
-  <div>
+  <>
     <Headers/>
 <BacteriaList/>
 
-  </div>
+  </>
   )
 }
 
