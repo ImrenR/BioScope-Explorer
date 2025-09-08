@@ -2,67 +2,80 @@ import { IoFilter } from "react-icons/io5";
 
 const LinkList = () => {
   return (
+    <div className="container-sm d-flex justify-content-between mt-5 ">
+      <div className="dropdown ">
+        <button
+          className="btn dropdown-toggle font-monospace fs-6"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Gram negative
+        </button>
 
-<div className="d-flex justify-content-between align-items-center w-100 p-3 mt-5 fs-6 ">
-        <div className="dropdown ">
-          <button
-            className="btn dropdown-toggle text-muted btn-outline-secondary"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Gram negative
-          </button>
-          <ul className="dropdown-menu">
-            <li>
-              <button className="dropdown-item" type="button">
-                Gram positive
-              </button>
-            </li>
-          </ul>
-        </div>
-
-        <ul className="nav">
-            <button
-            className="btn text-muted border border-light bg-light"
-            type="button"
-         
-          >
-            Discover
-          </button>
-          <li className="nav-item">
-            <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-             E. Coli
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-            Coliform
-            </a>
-          </li>
-            <li className="nav-item">
-            <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-              Staphylococcus aureus
-            </a>
-          </li>
-            <li className="nav-item">
-            <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-             Salmonella
-            </a>
-          </li>
-            <li className="nav-item">
-            <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-              Yeast & Mould
-            </a>
+        <ul className="dropdown-menu">
+          <li>
+            <button className="dropdown-item font-monospace" type="button">
+              Gram positive
+            </button>
           </li>
         </ul>
-        <button className="btn d-flex justify-content-between gap-2 p-2 border border-light bg-light ">
-          <IoFilter/>
-          <h6 className="fs-6">Filters</h6>
-        </button>
       </div>
- 
-  )
-}
 
-export default LinkList
+      <ul className="nav">
+        <button
+          className="btn text-muted border border-light bg-light"
+          type="button"
+        >
+          Discover
+        </button>
+        <li className="nav-item">
+          <a
+            className="nav-link text-muted text-decoration-none text-dark"
+            href="#"
+          >
+            E. Coli
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            className="nav-link text-muted text-decoration-none text-dark"
+            href="#"
+          >
+            Coliform
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            className="nav-link text-muted text-decoration-none text-dark"
+            href="#"
+          >
+            Staphylococcus aureus
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            className="nav-link text-muted text-decoration-none text-dark"
+            href="#"
+          >
+            Salmonella
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            className="nav-link text-muted text-decoration-none text-dark"
+            href="#"
+          >
+            Yeast & Mould
+          </a>
+        </li>
+      </ul>
+      <button className="btn d-flex justify-content-between gap-2">
+        <IoFilter size={20}/>
+        <h6 className="fs-6">Filters</h6>
+      </button>
+    </div>
+  );
+};
+
+export default LinkList;
