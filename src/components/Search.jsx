@@ -2,13 +2,14 @@ const Search = () => {
   return (
     <>
     <form action="">
-      <div className=" container-sm  d-flex justify-content-center mt-5 gap-1">
+      <div className="container-sm  d-flex justify-content-center mt-5 ">
         <input
           type="text"
-          className="form-control w-25"
+          className="form-control w-25 border-0 me-1"
           placeholder="Type to search..."
         />
-        <button className="btn btn-outline-primary" type="submit">
+        
+        <button className="btn btn-light" type="submit">
           Search
         </button>
       </div>
