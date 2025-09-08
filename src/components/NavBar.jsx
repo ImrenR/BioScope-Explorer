@@ -1,22 +1,24 @@
+import { CiSearch } from "react-icons/ci";
+
 const NavBar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary  ">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-light-subtle ms-auto ">
+        
+        <div className="container-sm">
           <a className="navbar-brand" href="#">
             BIOSCOPE
           </a>
+
           <button
-            className="navbar-toggler"
+            className="navbar-toggler btn-light"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon" />
+         <span className="navbar-toggler-icon" />
           </button>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -35,15 +37,17 @@ const NavBar = () => {
                 </a>
               </li>
             </ul>
-            <form className="d-flex" role="search">
+
+            <form className="position-relative " role="search">
+              
               <input
-                className="form-control me-2"
+                className="form-control pe-5"
                 type="search"
                 placeholder="Search for more.."
-                aria-label="Search"
+                
               />
-              <button className="btn btn-outline-success" type="submit">
-                Search
+              <button className="btn position-absolute end-0 top-50 translate-middle-y me-2 bg-transparent border-0" type="submit">
+              <CiSearch sixe={20}/> 
               </button>
             </form>
           </div>
