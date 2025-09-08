@@ -15,7 +15,7 @@ const Search = () => {
       </div>
 </form>
       <div className="mt-4 text-center">
-        <h4 className="text text-fw-bolder">Welcome to the Bioscope Web</h4>
+        <h4 className="text text-fw-bolder">Welcome to the Bioscope</h4>
         <h6 className="fw-lighter">
          
             10,000+ inspirational bacteria designs, illustrations and graphic
