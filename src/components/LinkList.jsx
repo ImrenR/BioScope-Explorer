@@ -32,27 +32,27 @@ const LinkList = () => {
           </button>
           <li className="nav-item">
             <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-             Tag-1
+             E. Coli
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-             Tag-2
+            Coliform
             </a>
           </li>
             <li className="nav-item">
             <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-              Tag-3
+              Staphylococcus aureus
             </a>
           </li>
             <li className="nav-item">
             <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-             Tag-4
+             Salmonella
             </a>
           </li>
             <li className="nav-item">
             <a className="nav-link text-muted text-decoration-none text-dark" href="#">
-              Tag-5
+              Yeast & Mould
             </a>
           </li>
         </ul>
