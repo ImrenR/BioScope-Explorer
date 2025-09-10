@@ -6,6 +6,7 @@ const sampleBacteria = [
   {
     id: 1,
     name: "Escherichia coli",
+    img: "",
     type: "Gram-negative",
     shape: "Rod",
     habitat: "Intestine",
@@ -13,6 +14,7 @@ const sampleBacteria = [
   },
   {
     id: 2,
+    img: "",
     name: "Staphylococcus aureus",
     type: "Gram-positive",
     shape: "Cocci",
@@ -21,6 +23,7 @@ const sampleBacteria = [
   },
   {
     id: 3,
+    img: "",
     name: "Bacillus subtilis",
     type: "Gram-positive",
     shape: "Rod",
@@ -29,6 +32,7 @@ const sampleBacteria = [
   },
   {
     id: 4,
+    img: "",
     name: "Pseudomonas aeruginosa",
     type: "Gram-negative",
     shape: "Rod",
@@ -45,6 +49,7 @@ const sampleBacteria = [
   },
   {
     id: 6,
+    img: "",
     name: "Lactobacillus acidophilus",
     type: "Gram-positive",
     shape: "Rod",
@@ -61,6 +66,7 @@ const sampleBacteria = [
   },
   {
     id: 8,
+    img: "",
     name: "Clostridium botulinum",
     type: "Gram-positive",
     shape: "Rod",
@@ -70,34 +76,23 @@ const sampleBacteria = [
 ];
 
 const Home = () => {
-  // State for all bacteria data
   const [bacteria, setBacteria] = useState([]);
-  
-  // State for search functionality
-  const [searchTerm, setSearchTerm] = useState("");
-  
-  // State for filter functionality
-  const [filterType, setFilterType] = useState("all");
-  const [filterShape, setFilterShape] = useState("all");
-  
-  // State for filtered and searched results
-  const [filteredBacteria, setFilteredBacteria] = useState([]);
+  const [searchTerm, setSearchTerm] = useState(""); // to able to search
+  const [filterType, setFilterType] = useState("all"); // for gramnegative and grampositive filtering
+  const [filterShape, setFilterShape] = useState("all"); // for the type of the spices
+  const [filteredBacteria, setFilteredBacteria] = useState([]); // filtered one - Result
 
-  // Load sample data on component mount
+
   useEffect(() => {
     setBacteria(sampleBacteria);
   }, []);
 
-  // Filter and search bacteria whenever search term, filter type, or bacteria data changes
+
   useEffect(() => {
     let filtered = bacteria;
-
-    // Apply search filter
     if (searchTerm) {
       filtered = filtered.filter(bacterium =>
-        bacterium.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        bacterium.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        bacterium.habitat.toLowerCase().includes(searchTerm.toLowerCase())
+        bacterium.name.toLowerCase().includes(searchTerm.toLowerCase()) 
       );
     }
 
