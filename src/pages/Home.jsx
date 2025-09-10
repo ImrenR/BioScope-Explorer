@@ -76,7 +76,7 @@ const sampleBacteria = [
 ];
 
 const Home = () => {
-  const [bacteria, setBacteria] = useState([]);
+  const [bacteria, setBacteria] = useState([]); // all the bacteria
   const [searchTerm, setSearchTerm] = useState(""); // to able to search
   const [filterType, setFilterType] = useState("all"); // for gramnegative and grampositive filtering
   const [filterShape, setFilterShape] = useState("all"); // for the type of the spices
