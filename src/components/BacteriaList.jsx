@@ -1,13 +1,10 @@
 import BacteriaCard from "./BacteriaCard";
 
 const BacteriaList = ({ 
-  bacteria, 
+  filtered, 
   searchTerm, 
   setSearchTerm, 
-  filterType, 
-  setFilterType, 
-  filterShape, 
-  setFilterShape 
+  
 }) => {
   return (
     <div>
@@ -30,43 +27,11 @@ const BacteriaList = ({
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
               </div>
-              <div className="row">
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="typeFilter" className="form-label">
-                    Filter by Type
-                  </label>
-                  <select
-                    className="form-select"
-                    id="typeFilter"
-                    value={filterType}
-                    onChange={(e) => setFilterType(e.target.value)}
-                  >
-                    <option value="all">All Types</option>
-                    <option value="Gram-positive">Gram-positive</option>
-                    <option value="Gram-negative">Gram-negative</option>
-                  </select>
-                </div>
-                
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="shapeFilter" className="form-label">
-                    Filter by Shape
-                  </label>
-                  <select
-                    className="form-select"
-                    id="shapeFilter"
-                    value={filterShape}
-                    onChange={(e) => setFilterShape(e.target.value)}
-                  >
-                    <option value="all">All Shapes</option>
-                    <option value="Rod">Rod</option>
-                    <option value="Cocci">Cocci</option>
-                  </select>
-                </div>
-              </div>
+             
 
               {/* Results Count */}
               <div className="text-muted">
-                Showing {bacteria.length} bacteria
+                Showing {filtered.length} bacteria
               </div>
             </div>
           </div>
@@ -75,8 +40,8 @@ const BacteriaList = ({
 
       {/* Bacteria Grid */}
       <div className="row">
-        {bacteria.length > 0 ? (
-          bacteria.map((bacterium) => (
+        {filtered.length > 0 ? (
+          filtered.map((bacterium) => (
             <BacteriaCard key={bacterium.id} bacterium={bacterium} />
           ))
         ) : (
