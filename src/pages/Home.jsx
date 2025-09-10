@@ -1,8 +1,8 @@
 import BacteriaList from "../components/BacteriaList";
 import { useEffect, useState } from "react";
 
-// Sample bacteria data for demonstration
-const sampleBacteria = [
+
+const data = [
   {
     id: 1,
     name: "Escherichia coli",
@@ -76,7 +76,7 @@ const sampleBacteria = [
 ];
 
 const Home = () => {
-  const [bacteria, setBacteria] = useState([]); // all the bacteria
+  const [bacteria, setBacteria] = useState([]); // all the filtered
   const [searchTerm, setSearchTerm] = useState(""); // to able to search
   const [filterType, setFilterType] = useState("all"); // for gramnegative and grampositive filtering
   const [filterShape, setFilterShape] = useState("all"); // for the type of the spices
@@ -84,36 +84,33 @@ const Home = () => {
 
 
   useEffect(() => {
-    setBacteria(sampleBacteria);
+    setBacteria(data);
   }, []);
 
 
   useEffect(() => {
-    let filtered = bacteria;
+   
     if (searchTerm) {
+      let filtered = bacteria;
       filtered = filtered.filter(bacterium =>
         bacterium.name.toLowerCase().includes(searchTerm.toLowerCase()) 
       );
     }
-
-    // Apply type filter
     if (filterType !== "all") {
       filtered = filtered.filter(bacterium => bacterium.type === filterType);
     }
-
-    // Apply shape filter
     if (filterShape !== "all") {
       filtered = filtered.filter(bacterium => bacterium.shape === filterShape);
     }
 
     setFilteredBacteria(filtered);
-  }, [bacteria, searchTerm, filterType, filterShape]);
+  }, [filtered, searchTerm, filterType, filterShape]);
 
   return (
     <div className="container mt-4">
       <h1 className="text-center mb-4">BioScope Explorer</h1>
       <BacteriaList 
-        bacteria={filteredBacteria}
+        filtered={filteredBacteria}
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         filterType={filterType}

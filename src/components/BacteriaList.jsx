@@ -11,14 +11,12 @@ const BacteriaList = ({
 }) => {
   return (
     <div>
-      {/* Search and Filter Controls */}
+     
       <div className="row mb-4">
         <div className="col-12">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Search & Filter</h5>
-              
-              {/* Search Input */}
               <div className="mb-3">
                 <label htmlFor="searchInput" className="form-label">
                   Search Bacteria
@@ -32,8 +30,6 @@ const BacteriaList = ({
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
               </div>
-
-              {/* Filter Controls */}
               <div className="row">
                 <div className="col-md-6 mb-3">
                   <label htmlFor="typeFilter" className="form-label">
