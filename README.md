@@ -31,20 +31,20 @@ Bioscope is a React-based web application that allows users to explore different
 
 ```
 src/
- ├── App.jsx               # Main entry point
- ├── index.js              # ReactDOM render
+ ├── App.jsx               
+ ├── index.js             
  ├── Components/
- │    ├── BacteriaCard.jsx # Displays bacteria cards
- │    ├── GramPN.jsx       # Dropdown & filter button
- │    ├── NavBar.jsx       # Navigation bar
+ │    ├── BacteriaCard.jsx  
+ │    ├── GramPN.jsx      
+ │    ├── NavBar.jsx      
  ├── Helper/
- │    └── Bacterium.js     # Bacteria dataset
+ │    └── Bacterium.js      
  ├── pages/
- │    └── Home.jsx         # Home page with search + list
+ │    └── Home.jsx        
  ├── assets/
- │    └── images/          # Images used in cards
+ │    └── images/        
  └── styles/
-      └── index.css        # Custom CSS
+      └── index.css       
 ```
 
 
