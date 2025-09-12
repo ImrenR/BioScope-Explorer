@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'
 import SearchFilter from './components/SearchFilter'
 import './App.css'
 
@@ -23,7 +22,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1>Search & Filter Demo</h1>
-        <p>Demonstrating useState and useEffect for search and filtering</p>
+        <p>Understanding React Hooks(useState and useEffect)</p>
       </header>
       <main className="app-main">
         <SearchFilter data={sampleData} />

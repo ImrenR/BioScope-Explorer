@@ -1,33 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import  { useState, useEffect } from 'react'
 
 const SearchFilter = ({ data }) => {
-  // State for search term
-  const [searchTerm, setSearchTerm] = useState('')
-  
-  // State for category filter
-  const [selectedCategory, setSelectedCategory] = useState('all')
-  
-  // State for stock filter
-  const [showInStockOnly, setShowInStockOnly] = useState(false)
-  
-  // State for price range
-  const [priceRange, setPriceRange] = useState({ min: 0, max: 10 })
-  
-  // State for filtered results
-  const [filteredData, setFilteredData] = useState(data)
-  
-  // State for sorting
-  const [sortBy, setSortBy] = useState('name')
+ 
+  const [searchTerm, setSearchTerm] = useState('')  // State for search term
+  const [selectedCategory, setSelectedCategory] = useState('all')  // State for category filter
+  const [showInStockOnly, setShowInStockOnly] = useState(false)   // State for stock filter
+  const [priceRange, setPriceRange] = useState({ min: 0, max: 10 })   // State for price range
+  const [filteredData, setFilteredData] = useState(data)  // State for filtered results
+  const [sortBy, setSortBy] = useState('name')  // State for sorting
   const [sortOrder, setSortOrder] = useState('asc')
+
 
   // Get unique categories for filter dropdown
   const categories = ['all', ...new Set(data.map(item => item.category))]
 
-  // Filter and search function
+
   const applyFilters = () => {
     let filtered = [...data]
-
-    // Search filter
     if (searchTerm) {
       filtered = filtered.filter(item =>
         item.name.toLowerCase().includes(searchTerm.toLowerCase())
