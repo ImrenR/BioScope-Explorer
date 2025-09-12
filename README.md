@@ -1,12 +1,79 @@
-# React + Vite
+# Bioscope
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bioscope is a React-based web application that allows users to explore different types of bacteria. It provides search and filtering functionality with a clean Bootstrap-based UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Search bacteria by name or group.
+-  Bacteria cards with image, description, and group information.
+- Filter section (Gram Positive / Gram Negative dropdown and filters button).
+-  Responsive Navbar with brand, navigation links, and search bar.
+- Styled with Bootstrap 5 + custom CSS.
+- Interactive UI with hover effects and modern fonts.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- React 18 (functional components + hooks)
+
+- Bootstrap 5 (layout and responsiveness)
+
+- React Icons (react-icons/io5 for filter icon)
+
+- Custom CSS with Google Fonts
+
+---
+
+## Project Structure
+
+```
+src/
+ ├── App.jsx               # Main entry point
+ ├── index.js              # ReactDOM render
+ ├── Components/
+ │    ├── BacteriaCard.jsx # Displays bacteria cards
+ │    ├── GramPN.jsx       # Dropdown & filter button
+ │    ├── NavBar.jsx       # Navigation bar
+ ├── Helper/
+ │    └── Bacterium.js     # Bacteria dataset
+ ├── pages/
+ │    └── Home.jsx         # Home page with search + list
+ ├── assets/
+ │    └── images/          # Images used in cards
+ └── styles/
+      └── index.css        # Custom CSS
+```
+
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/ImrenR/bioscope.git
+cd bioscope
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+
+Open in browser:
+👉 http://localhost:5173
+ (Vite default)
+
+
+👨‍💻 Author
+
+Developed by ImrenR
+
+Open to contributions, suggestions, and feedback!
+
