@@ -1,6 +1,7 @@
 import { useState } from "react"
 import BacteriaCard from "../Components/BacteriaCard"
 import BacteriaData from "../Helper/Bacterium"
+import NavBar from "../Components/NavBar"
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
 
   return (
   <div className="app">
+    <NavBar/>
    <div className="container-fuild">
     <div className="row justify-container-center">
       <div className="col-12 col-lg-10 col-xl-8">
