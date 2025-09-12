@@ -6,7 +6,7 @@ const BacteriaCard = ({ BacteriaData }) => {
           const { name, group, image, description } = item;
           return (
             <div key={id} className="col-12 col-md-6 col-lg-4">
-              <div className="card" >
+              <div className="card " >
                 <img src={image} className="card-img-top" alt={name} />
                 <div className="card-body d-block">
                   <h5 className="card-title">{name}</h5>

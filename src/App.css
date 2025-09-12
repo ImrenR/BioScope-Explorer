@@ -7,17 +7,22 @@
 
 
 .card {
-  margin: 1rem;
-  padding: 1rem;
-  height: 400px !important;
+  margin-top: 1rem;
+  padding: 0.1rem;
+  height: 310px !important;
   width:300px;
-
- 
+   background: linear-gradient(to bottom, rgba(238, 231, 231, 0.34), rgba(98, 197, 230, 0.7)), 
+              url("/images/micro.jpeg");
+  background-size: cover;        
+  background-position: center;   
+  border-radius: 0.5rem;         
+  color: #000; 
 }
 
 .card-img-top{
-  width: 150px;
-  margin-left: 4rem;
+  width: 100px;
+  margin-left: 6rem;
+  margin-top: 1rem;
   
 }
 .card-text{
