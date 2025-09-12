@@ -1,4 +1,4 @@
-### Bioscope
+# Bioscope
 
 Bioscope is a React-based web application that allows users to explore different types of bacteria. It provides search and filtering functionality with a clean Bootstrap-based UI.
 
