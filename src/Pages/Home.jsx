@@ -14,14 +14,14 @@ const Home = () => {
   );
   return (
     <div className="app">
-      <div className="container-fuild">
+      <div className="container-fluid">
         <div className="row justify-container-center">
           <NavBar />
           <div className="col-12 col-lg-10 col-xl-8">
-            <div className="mb-4">
+            <div className="d-flex justify-content-center mb-4">
               <input
                 type="text"
-                className="Search"
+                className="search"
                 placeholder="Search.."
                 onChange={(e) => setSearch(e.target.value)}
               />
