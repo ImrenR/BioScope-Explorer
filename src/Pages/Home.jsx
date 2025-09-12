@@ -4,11 +4,15 @@ import BacteriaData from "../Helper/Bacterium"
 import NavBar from "../Components/NavBar"
 
 
+
 const Home = () => {
 
   const [search, setSearch] = useState("")
 
-
+const filtered = BacteriaData.filter(item=>
+  item.name.toLowerCase().includes(search.toLowerCase()) ||
+  item.group.toLowerCase().includes(search.toLowerCase())
+)
   return (
   <div className="app">
     <NavBar/>
@@ -21,11 +25,11 @@ const Home = () => {
       className="Search" 
       placeholder="Search.."
       onChange={(e)=>setSearch(e.target.value)}/>
-      
+     
        </div>
  </div>
  </div>
-<BacteriaCard BacteriaData={BacteriaData}/>
+<BacteriaCard BacteriaData={filtered}/>
 </div>
  </div>
 )

@@ -1,3 +1,4 @@
+
 const BacteriaCard = ({ BacteriaData }) => {
   return (
     <div className="container mt-4">
