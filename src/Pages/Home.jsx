@@ -35,56 +35,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="group d-flex justify-content-between mx-4">
-  <div className="dropdown">
-  <button
-    className="btn dropdown-toggle border-4"
-    type="button"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-   
-  >
-    GROUPS
-  </button>
-  <ul className="dropdown-menu">
-    <li>
-      <a 
-        className="dropdown-item" 
-        href="#"
-        
-      >
-        All
-      </a>
-    </li>
-    <li>
-      <a 
-        className="dropdown-item" 
-        href="#"
-        
-      >
-        Gram Positive
-      </a>
-    </li>
-    <li>
-      <a 
-        className="dropdown-item" 
-        href="#"
-       
-      >
-        Gram Negative
-      </a>
-    </li>
-    
-  </ul>
-</div>
-<div className="icon">
-  <button className="iconFilters d-flex justify-content-center align-content-center p-2 border-1">
-  <h5 className="me-2">Filters</h5>
-<IoFilterOutline size={28}
-/>
-</button>
-</div>
-</div>
+  
 
         <BacteriaCard BacteriaData={filtered} />
       </div>
