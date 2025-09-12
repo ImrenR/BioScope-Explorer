@@ -12,6 +12,9 @@ const Home = () => {
       item.name.toLowerCase().includes(search.toLowerCase()) ||
       item.group.toLowerCase().includes(search.toLowerCase())
   );
+
+
+
   return (
     <div className="app">
       <div className="container-fluid">
