@@ -1,4 +1,4 @@
-# Bioscope
+### Bioscope
 
 Bioscope is a React-based web application that allows users to explore different types of bacteria. It provides search and filtering functionality with a clean Bootstrap-based UI.
 
@@ -50,28 +50,28 @@ src/
 
 ## Installation
 
-Clone the repository:
+- Clone the repository:
 
 git clone https://github.com/ImrenR/bioscope.git
 cd bioscope
 
 
-Install dependencies:
+- Install dependencies:
 
 npm install
 
 
-Start the development server:
+- Start the development server:
 
 npm run dev
 
 
-Open in browser:
+- Open in browser:
 👉 http://localhost:5173
  (Vite default)
 
 
-👨‍💻 Author
+## Author
 
 Developed by ImrenR
 
