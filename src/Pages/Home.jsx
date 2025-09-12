@@ -14,9 +14,6 @@ const Home = () => {
       item.group.toLowerCase().includes(search.toLowerCase())
   );
 
-  
-
-
 
 
   return (
