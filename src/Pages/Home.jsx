@@ -42,6 +42,7 @@ useEffect(() => {
 }, [search, filter, users])
 
   const setFilterTo = (f) => setFilter(f);
+  
   return (
     <div className="app">
       <div className="container-fluid">
