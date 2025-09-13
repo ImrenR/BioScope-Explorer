@@ -1,9 +1,9 @@
 
-const BacteriaCard = ({ BacteriaData }) => {
+const BacteriaCard = ({ filteredUsers, loading }) => {
   return (
     <div className="container mt-4">
       <div className="row g-4">
-        {BacteriaData.map((item, id) => {
+        {filteredUsers.map((item, id) => {
           const { name, group, image, description } = item;
           return (
             <div key={id} className="col-12 col-md-6 col-lg-4">
