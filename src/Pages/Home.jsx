@@ -46,7 +46,7 @@ useEffect(() => {
   return (
     <div className="app">
       <div className="container-fluid">
-        <div className="row justify-container-center">
+        <div className="row justify-container-center align-items-center">
           <NavBar/>
           <div className="col-12 col-lg-10 col-xl-8">
             <div className="d-flex justify-content-center mb-4">
