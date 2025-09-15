@@ -49,7 +49,7 @@ useEffect(() => {
         <div className="row justify-container-center align-items-center">
           <NavBar/>
           <div className="col-12 col-lg-10 col-xl-8">
-            <div className="d-flex justify-content-center mb-4">
+            <div className="d-flex justify-content-center align-items-center mb-4">
               <input
                 type="text"
                 className="search"
