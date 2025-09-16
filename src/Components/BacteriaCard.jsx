@@ -1,7 +1,7 @@
 const BacteriaCard = ({ filteredUsers, loading }) => {
   return (
-    <div className="container mt-4">
-      <div className="row g-4">
+    <div className="container mt-4 text-center">
+      <div className="row g-4 justify-content-center">
         {loading ? (
           <div>Loading...</div>
         ) : filteredUsers.length === 0 ? (

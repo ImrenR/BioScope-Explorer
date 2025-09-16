@@ -46,19 +46,19 @@ useEffect(() => {
   return (
     <div className="app">
       <div className="container-fluid">
-        <div className="row justify-container-center align-items-center">
+        <div className="row justify-content-center align-items-center">
           <NavBar/>
           <div className="col-12 col-lg-10 col-xl-8">
-            <div className="d-flex justify-content-center align-items-center mb-4">
+            <div className="mb-4">
               <input
                 type="text"
-                className="search"
+                className="form-control text-center"
                 placeholder="Search.."
                 value={search}
                 onChange={(e)=>setSearch(e.target.value)}
               />
             </div>
-            <div className="group d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap"> 
               <button className={`btn me-2 ${filter === "all" ? "btn-info" : "btn-outline-info"}`}
               onClick={()=>setFilterTo("all")}>
                 All
